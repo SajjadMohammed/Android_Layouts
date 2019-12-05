@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/support_toolbar"/>
+
+    <Button
+        android:gravity="left|center_vertical"
+        android:onClick="ClickMe"
+        android:textAllCaps="false"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:textColor="#E8ECEE"
+        android:textSize="24sp"
+        android:fontFamily="monospace"
+        android:background="@color/colorPrimary"
+        android:text="@string/click_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_gravity="right"
+        android:onClick="Button2"
+        android:textAllCaps="false"
+        android:text="@string/i_am_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="User Name"
+        android:gravity="left"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Password"
+        android:lineSpacingExtra="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <include layout="@layout/frame_layout"/>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/MyEditText"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<Button-->
+            <!--android:layout_below="@id/MyEditText"-->
+            <!--android:id="@+id/l"-->
+            <!--android:text="Login"-->
+            <!--android:layout_toLeftOf="@id/c"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<Button-->
+            <!--android:id="@+id/c"-->
+            <!--android:text="cancel"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@id/MyEditText"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</RelativeLayout>-->
+
+</LinearLayout>
